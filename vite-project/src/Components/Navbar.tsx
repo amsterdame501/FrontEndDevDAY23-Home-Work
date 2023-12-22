@@ -39,7 +39,7 @@ function Navbar() {
     <AppBar position="static" sx={ {background:"#E5E4E2"} }>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AppleIcon sx={ { display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <AppleIcon sx={{ display: { xs: 'none', md: 'flex' ,color :'#000000' }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
@@ -51,11 +51,11 @@ function Navbar() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '0rem',
-              color: 'Black',
+              color: '#000000',
               textDecoration: 'none',
             }}
           >
-          You Brand
+          <h4>You Brand</h4>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -65,6 +65,7 @@ function Navbar() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
+
             >
               <MenuIcon />
             </IconButton>
@@ -93,6 +94,7 @@ function Navbar() {
               ))}
             </Menu>
           </Box>
+          <AppleIcon sx={{ display: { xs: 'flex', md: 'none' ,color :'#000000' }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap

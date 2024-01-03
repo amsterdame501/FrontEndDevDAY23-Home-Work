@@ -1,10 +1,7 @@
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import CircularProgress, {
-  circularProgressClasses,
-  CircularProgressProps,
-} from '@mui/material/CircularProgress';
+
 import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgress';
 
 const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
@@ -23,9 +20,10 @@ const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
 
 export default function Processbar() {
   return (
-    <Box sx={{ flexGrow: 0 }}>
-        <h4>Stock 50/50</h4>
+    <Box sx={{ flexGrow: 0 }} style={{ maxHeight: '150px' }}>
+        <h4>Stock 50/100</h4>
       <BorderLinearProgress variant="determinate" value={50} />
+      <br /><br /><br />
     </Box>
   );
 }

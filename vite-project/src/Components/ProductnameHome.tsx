@@ -4,7 +4,7 @@ function ProductnameHome() {
   return (
     <>
     <h3>Product Name</h3>  
-    <p> Lorem ipsum, dolor sit amet consectetur adipisicing e asda fdghq fghfgh sdfftyu tyugfh sfrert fdgfghfg  ert dfgfgdfg qjdfg ghjgdfg lit. Fuga molestiae nesciunt odit , repudiandae quos provident animi totam ab nam iure cum asd asdas tsae sasdf  rertert dssfsdf dfet sqqweqwe hyffhf sdfsdfsfe voluptatem nobis!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing exercitationem inventore elit. Minus, fugiat non a exercitationem inventore consequatur iure officiis quaerat doloribus vero unde ullam magnam quas debitis exercitationem inventore cupiditate? Magni nobis non The agg and sit.</p>
     <h3>Price:199$</h3>
     <p>Quantily:</p>
     <input type="text" /> <br /><br />

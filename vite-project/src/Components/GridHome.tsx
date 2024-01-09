@@ -8,6 +8,8 @@ import Processbar from './Processbar';
 import ProductnameHome from './ProductnameHome';
 import TableSpecHome from './TableSpecHome';
 import RatebarHome from './RatebarHome';
+import CommentComponent from './CommentComponent';
+
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode,
   ...theme.typography.body1,
@@ -33,6 +35,9 @@ export default function GridHome() {
   </Grid>
   <Grid item xs={12} md={12}>
     <Item ><RatebarHome/></Item>
+  </Grid>
+  <Grid item xs={12} md={12}>
+    <Item ><CommentComponent /></Item>
   </Grid>
 </Grid>
     </Container>

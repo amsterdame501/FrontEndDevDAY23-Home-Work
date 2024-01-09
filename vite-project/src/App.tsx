@@ -1,15 +1,21 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import Home from './Pages/Home'
+import Album from './Pages/Album'
+import NotFound from './Pages/NotFound'
+import Checkout from './Pages/Checkout'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
   return (
     <>
       <div>
-       <Home/>
+        <Routes> 
+         <Route path="/" element = {<Home/>}/> 
+         <Route path="*" element = {<NotFound/>}/>
+         <Route path="/Album" element = {<Album/>}/>
+         <Route path="/Checkout" element = {<Checkout/>}/>
+        </Routes>
       </div>
     </>
   )

@@ -29,7 +29,10 @@ function RatebarHome() {
   onChange={(event, newValue) => {
     setValue(newValue);
   }}
-/><Button variant="contained" color="primary" onClick={handleButtonClick}>
+
+/>
+<br />
+<Button variant="contained" color="primary" onClick={handleButtonClick}>
                   Submit Rating
                 </Button>
                 </TableCell>

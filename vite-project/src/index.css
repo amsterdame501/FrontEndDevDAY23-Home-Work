@@ -2,3 +2,8 @@ body {
     margin: 0;
     padding: 0;
 }
+.custom-textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 10rem;
+  }

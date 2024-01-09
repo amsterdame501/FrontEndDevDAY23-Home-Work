@@ -1,13 +1,12 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
-import GridAlbum from '../Components/GridAlbum'
-function Album() {
+function NotFound() {
   return (
     <>
     <Navbar/>
-    <GridAlbum/>
+    <p style={{textAlign:'center'}}>NotFoubd Error 404</p>
     </>
   )
 }
 
-export default Album
+export default NotFound

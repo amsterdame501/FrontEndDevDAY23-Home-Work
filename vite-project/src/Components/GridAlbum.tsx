@@ -1,9 +1,13 @@
 import React from 'react'
 import AlbumExample from './Albumexample'
 import CardAlbum from './CardAlbum'
+import CardAlbum2 from './CardAlbum2';
+import CardAlbum3 from './CardAlbum3';
+import CardAlbum4 from './CardAlbum4';
+import CardAlbum5 from './CardAlbum5';
+import CardAlbum6 from './CardAlbum6';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 function GridAlbum() {
   return (
@@ -17,19 +21,19 @@ function GridAlbum() {
         <CardAlbum/>
         </Grid>
         <Grid item xs={12} md={4}>
-        <CardAlbum/>
+        <CardAlbum2/>
         </Grid>
         <Grid item xs={12} md={4}>
-        <CardAlbum/>
+        <CardAlbum3/>
         </Grid>
         <Grid item xs={12} md={4}>
-        <CardAlbum/>
+        <CardAlbum4/>
         </Grid>
         <Grid item xs={12} md={4}>
-        <CardAlbum/>
+        <CardAlbum5/>
         </Grid>
         <Grid item xs={12} md={4}>
-        <CardAlbum/>
+        <CardAlbum6/>
         </Grid>
       </Grid>
         

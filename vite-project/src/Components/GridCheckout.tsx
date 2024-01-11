@@ -5,7 +5,9 @@ import Paper from '@mui/material/Paper';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import BillingAddress from './BillingAddress';
-
+import BillingRadio from './BillingRadio';
+import BillingCheckbox from './BillingCheckbox';
+import Button from '@mui/material/Button';
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
@@ -26,10 +28,16 @@ export default function GridCheckout() {
           <Item>You Cart</Item>
         </Grid>
         <Grid item xs={12}>
-          <Item></Item>
+          <Item><BillingCheckbox/></Item>
         </Grid>
         <Grid item xs={12}>
-          <Item>4</Item>
+          <Item><BillingRadio/></Item>
+        </Grid>
+        <Grid item xs={12}>
+          <Item>
+          <Button variant="contained">Confirm</Button>&nbsp; &nbsp; &nbsp;
+          <Button variant="contained">Cancel</Button>
+          </Item>
         </Grid>
       </Grid>
     </Box>

@@ -4,10 +4,10 @@ import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 
-const CardAlbum = ({}) => {
+const CardAlbum4 = ({}) => {
   return (
     <Card>
-      <CardMedia component="img" image='src\assets\img-product1.png'/>
+      <CardMedia component="img" image='src\assets\img-product4.png'/>
       <CardContent>
         <>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sapiente inventore reiciendis velit tempore! Corrupti sed, blanditiis aspernatur quibusdam, architecto cumque esse itaque, molestias delectus aperiam ipsum veniam maxime tenetur.</p>
@@ -25,4 +25,4 @@ const CardAlbum = ({}) => {
   );
 };
 
-export default CardAlbum ;
+export default CardAlbum4 ;

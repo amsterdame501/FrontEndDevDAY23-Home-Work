@@ -1,6 +1,9 @@
 import React from 'react'
-import { Grid } from '@mui/material'
+import { Grid ,MenuItem ,Box} from '@mui/material'
 import TextField from '@mui/material/TextField';
+import FormControl from '@mui/material/FormControl';
+import InputLabel from '@mui/material/InputLabel';
+import Select, { SelectChangeEvent } from '@mui/material/Select';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 function BillingAddress() {
   return (
@@ -29,7 +32,7 @@ function BillingAddress() {
                 <label> Username </label>
                 <br />
         <AlternateEmailIcon/>
-        <TextField fullWidth
+        <TextField 
           id="outlined-size-small"
           size="small"
           placeholder='Username'
@@ -61,15 +64,40 @@ function BillingAddress() {
             <div style={{textAlign:"start"}} >
                 <label> Address 2 ( Optional) </label>
                 <br />
-
-        <TextField fullWidth
+          <TextField fullWidth
           id="outlined-size-small"
           size="small"
-          placeholder='Apartment or Suite'
+          placeholder='Address'
         />
-            </div>
+        </div>
 
-            
+        /**/
+
+    <Grid textAlign={'start'}  >
+    <FormControl  sx={{ m: 1, minWidth: 120 }} size="small">Country
+      <Select
+        label='Country'
+      >
+        <MenuItem value="" >
+        </MenuItem>
+        <MenuItem value={'th'}>Thailand</MenuItem>
+      </Select>
+    </FormControl>
+
+    <FormControl  sx={{ m: 1, minWidth: 120 }} size="small">State
+      <Select>
+        <MenuItem value="" >
+        </MenuItem>
+        <MenuItem value={'BKK'}>Bangkok</MenuItem>
+        <MenuItem value={'NON'}>Nontaburi</MenuItem>
+        <MenuItem value={'PatThum'}>PathumThani</MenuItem>
+      </Select>
+    </FormControl>
+    <FormControl sx={{ m:1, minWidth:210}} > Zipcode 
+    <TextField size="small" />
+    </FormControl>
+    </Grid>
+
     </div>
     </>
   )
